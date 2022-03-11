@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+/* card design */
+
+.card{
+  border: solid 1px black;
+  /* position: fixed; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Nav bar design */
+
+.main{
+  margin-top: 25px;
+  margin-left: 60%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* head-line animation */
+
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Display:900&display=swap');
+
+.black-lives-matter {
+font-size: 5vw;
+line-height: 5vw;
+margin: 0;
+font-family: 'Red Hat Display', sans-serif;
+font-weight: 900;
+background: url(https://raw.githubusercontent.com/s1mpson/-/master/codepen/black-lives-matter/victim-collage.png);
+background-size: 40%;
+background-position: 50% 50%;
+-webkit-background-clip: text;
+color: rgba(0,0,0,0.08);
+animation: zoomout 10s ease 500ms forwards;
+}
+
+@keyframes zoomout {
+from {
+  background-size: 40%;
+}
+to {
+  background-size: 10%;
+}
+}
+
+
+/* Responsive-ness design */
+  
+
+@media screen and (min-width:480px){
+      #res-card{
+          height:200px;
+          width: 50px;
+          /* background-color: aqua;   */
+      }
   }
-}
+  @media screen and (min-width:480px){
+      .black-lives-matter {
+          font-size: 4vw;
+          line-height: 5vw;
+          justify-content: center;
+          font-family: 'Red Hat Display', sans-serif;
+          font-weight: 900;
+          background: url(https://raw.githubusercontent.com/s1mpson/-/master/codepen/black-lives-matter/victim-collage.png);
+          background-size: 40%;
+          background-position: 50% 50%;
+          -webkit-background-clip: text;
+          color: rgba(0,0,0,0.08);
+          animation: zoomout 10s ease 500ms forwards;
+        }
+        
+        @keyframes zoomout {
+          from {
+            background-size: 40%;
+          }
+          to {
+            background-size: 10%;
+          }
+        }
+      }
+  
+      
+        
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+      
